@@ -18,6 +18,7 @@ import org.tk.lunarchat.Database.Model.User;
 public class UserController {
     @Autowired
     public UserRepo userRepo;
+    
     @ResponseStatus(code = HttpStatus.FORBIDDEN)
     @ExceptionHandler()
     @GetMapping("/api/create")
